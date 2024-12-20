@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body{
+            background-color: rgb(139, 231, 167);
+        }
+        .Container{
+            display: grid;
+            grid-template-columns: 90px auto;
+            grid-template-rows: 10% auto auto;
+            grid-template-areas: "nav nav nav" "asidee a1 a2" ;
+            grid-gap: 20px;
+        }
+        nav{
+            grid-area: nav;
+            background-color: cadetblue;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+            font-size: larger;
+            font-family:Arial, 'Times New Roman', Times, serif;
+        }
+        nav p{
+            color: brown;
+            font-size: larger;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        aside{
+            background-color: rgb(219, 163, 163);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        aside p{
+            color: brown;
+            font-size: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .article1{grid-area: a1;}
+        .article2{grid-area: a2;}
+        .asidee{grid-area: asidee;}
+        footer{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+        }
+        footer p{
+            color: azure;
+            font-size: 20px;
+        }
+        h3{
+            font-weight: 900;
+            font-size: larger;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <nav class="nav" >
+            <p>Google</p>
+            <p>Udacity</p>
+            <p>Console Games</p>
+            <p>Mo Salah</p>
+            <p>CR7</p>
+            <p>Messi</p>
+        </nav>
+        <aside class="asidee">
+            <p>Item 1</p>
+            <p>Item 2</p>
+            <p>Item 3</p>
+            <p>Item 4</p>
+            <p>Item 5</p>
+            <p>Item 6</p>
+            <p>Item 7</p>
+            <p>Item 8</p>
+            <p>Item 9</p>
+            <p>Item 10</p>
+        </aside>
+        <article class="article1">
+            <h3>The Rise of Women’s Football</h3>
+            <p>Women’s football has experienced a dramatic rise in popularity over the past decade.</p>
+        </article>
+        <article class="article2">
+            <h3>The Evolution of Pop Music</h3>
+            <p>Pop music has constantly evolved, reflecting the culture and technology of its time.</p>
+        </article>
+    </div>
+    <footer>
+        <p>Bashaaaa Elbalaaaaad</p>
+        <p>Bashaaaa elkooooon</p>
+        <p>CR7 3mk</p>
+        <p>Madridista Forever</p>
+    </footer>
+</body>
+</html>
